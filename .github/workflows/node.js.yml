@@ -36,6 +36,7 @@ jobs:
       
   docker_build:
     
+    needs: [build_and_test]
     name: Build Image
     runs-on: ubuntu-latest
 
